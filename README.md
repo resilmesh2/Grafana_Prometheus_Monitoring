@@ -37,7 +37,8 @@ Go to Dashboards > New > Import and use these IDs:
 
 ## Multiple servers deployment
 
-Clone the repository into the main server and addapt prometheus.yml file as needed before you run `$ docker compose up -d`. 
+Clone the repository into the main server and addapt prometheus.yml file as needed before you run `$ docker compose up -d`. The file docker-compose.yml does not need to be changed.
+
 The following is an example:
 
 ```
