@@ -1,6 +1,9 @@
 # Grafana_Prometheus_Monitoring
 The following project is focused on a single server deployment. If more dockerized servers need to be monitored, go to the section **Multiple servers deployment**.
 
+## Prerequisites
+Prior to initialization, ensure that the required ports (9090, 3500, and 8088) are available and properly configured to allow incoming traffic for service accessibility.
+
 ## Project Structure
 ```
 monitoring/
@@ -43,7 +46,7 @@ Go to Dashboards > New > Import and use these IDs:
 
 **Deployment**
 
-Clone the repository into the main server and addapt prometheus.yml file as needed before you run `$ docker compose up -d`. The file docker-compose.yml does not need to be changed.
+Clone the repository to the host machine. Adjust the `prometheus.yml` configuration to match your environment before running the deployment command: `$ docker compose up -d`. The `docker-compose.yml` file is pre-configured and should remain unchanged.
 
 The following is an example:
 
